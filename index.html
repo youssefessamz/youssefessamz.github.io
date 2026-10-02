@@ -36,9 +36,12 @@
           <div class="actions"><a class="btn primary" href="#projects">Explore projects ↓</a><a class="btn ghost" href="mailto:youssifessamzskimelgy@gmail.com?subject=Portfolio%20Contact">Email me</a></div>
           <div class="social"><a href="https://github.com/youssefessamz" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/youssef-essam-81a31537b/" target="_blank" rel="noreferrer">LinkedIn</a><span>Alexandria, Egypt</span></div>
         </div>
-        <div class="orbit-wrap reveal delay-1" aria-hidden="true">
-          <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
-          <div class="core"><span>ML</span></div>
+        <div class="profile-visual reveal delay-1">
+          <div class="photo-halo"></div>
+          <div class="profile-orbit p1"></div><div class="profile-orbit p2"></div>
+          <div class="photo-frame">
+            <img src="me.jpg" alt="Portrait of Youssef Essam Zaki Melegy">
+          </div>
           <b class="chip c1">Python</b><b class="chip c2">Pandas</b><b class="chip c3">Selenium</b><b class="chip c4">C++</b>
           <small>learn → build → iterate</small>
         </div>
@@ -92,16 +95,11 @@
           <div class="tags"><span>Python</span><span>Selenium</span><span>ChromeDriver</span></div>
           <button class="btn primary" id="openCode">View full code ↗</button>
         </div>
-        <div class="terminal">
-          <div class="term-bar"><i></i><i></i><i></i><span>wuzzuf_scraper.py</span></div>
-          <pre><code>driver.get(url)
-job_cards = driver.find_elements(...)
-for card in job_cards:
-    job_name.append(...)
-    company.append(...)
-    location.append(...)
-df = pd.DataFrame({...})</code></pre>
-        </div>
+        <figure class="result-figure">
+          <div class="result-bar"><span>SCRAPING OUTPUT</span><span>1060 ROWS · 6 COLUMNS</span></div>
+          <img src="wazzuf-output.webp" alt="Wuzzuf scraper Pandas DataFrame output showing scraped job records">
+          <figcaption>Sample output from the Selenium scraper: job, company, location, job type, workplace, and application link.</figcaption>
+        </figure>
       </article>
 
       <div class="project-grid">
