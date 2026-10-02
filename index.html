@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Youssef Essam Zaki Melegy — Machine Learning / Data Science portfolio">
+  <title>Youssef Essam Zaki Melegy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a class="brand" href="#home">Y<span>.</span></a>
+      <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+      </div>
+      <a class="github" href="https://github.com/youssefessamz" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div class="reveal">
+          <p class="eyebrow"><i></i> MACHINE LEARNING · DATA · SOFTWARE</p>
+          <h1>Youssef Essam<br><span>Zaki Melegy</span></h1>
+          <p class="role">Machine Learning Engineer / Computer Science Student</p>
+          <p class="lead">I build practical systems with Python, data, automation and machine learning, while growing toward advanced AI and quantum computing.</p>
+          <div class="actions"><a class="btn primary" href="#projects">Explore projects ↓</a><a class="btn ghost" href="mailto:youssifessamzskimelgy@gmail.com?subject=Portfolio%20Contact">Email me</a></div>
+          <div class="social"><a href="https://github.com/youssefessamz" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/youssef-essam-81a31537b/" target="_blank" rel="noreferrer">LinkedIn</a><span>Alexandria, Egypt</span></div>
+        </div>
+        <div class="orbit-wrap reveal delay-1" aria-hidden="true">
+          <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+          <div class="core"><span>ML</span></div>
+          <b class="chip c1">Python</b><b class="chip c2">Pandas</b><b class="chip c3">Selenium</b><b class="chip c4">C++</b>
+          <small>learn → build → iterate</small>
+        </div>
+      </div>
+      <div class="scroll">SCROLL TO EXPLORE ↓</div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="heading reveal"><span>01</span><div><p class="eyebrow">ABOUT</p><h2>From fundamentals to real projects.</h2></div></div>
+      <div class="two-col">
+        <article class="panel reveal"><div class="mini-top"><b>COMPUTER SCIENCE STUDENT</b><span>2026 → 2029</span></div>
+          <p>I'm a Computer Science student at Damanhour University focused on Machine Learning and Data Science. My hands-on work includes automated web scraping, structured data collection, visualization, and algorithmic problem solving.</p>
+          <p>I'm currently developing my ML and data skills through DEPI's IBM track while continuing university studies and competitive programming.</p>
+        </article>
+        <aside class="panel facts reveal delay-1">
+          <div><small>EDUCATION</small><strong>B.Sc. Computer Science</strong><em>Damanhour University · Expected 2029</em></div>
+          <div><small>CURRENT</small><strong>Machine Learning Trainee</strong><em>DEPI · IBM Track</em></div>
+          <div><small>INTERESTS</small><strong>AI · Data · Quantum Computing</strong><em>Software · Problem Solving</em></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section tinted" id="skills">
+      <div class="heading reveal"><span>02</span><div><p class="eyebrow">SKILLS</p><h2>Tools I'm building with.</h2><p class="muted">A growing toolkit for data, automation, ML and software.</p></div></div>
+      <div class="skill-grid">
+        <article class="skill reveal"><b>⌘</b><h3>Programming</h3><p>Python · C++ · SQL · OOP</p></article>
+        <article class="skill reveal delay-1"><b>▦</b><h3>Data</h3><p>NumPy · Pandas · Cleaning · Visualization</p></article>
+        <article class="skill reveal delay-2"><b>◎</b><h3>Automation</h3><p>Selenium · BeautifulSoup · Web Scraping</p></article>
+        <article class="skill reveal"><b>△</b><h3>Core CS</h3><p>DSA · Problem Solving · Discrete Math · Networking</p></article>
+        <article class="skill wide reveal delay-1"><b>◇</b><h3>Exploration</h3><p>Machine Learning · Competitive Programming · IoT · Quantum Computing</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="heading reveal"><span>03</span><div><p class="eyebrow">PROJECTS</p><h2>Work that shows how I learn.</h2><p class="muted">Focused on projects where code meets a real technical problem.</p></div></div>
+
+      <article class="project featured reveal">
+        <div>
+          <div class="project-top"><span>01 · DATA EXTRACTION</span><span>SELENIUM</span></div>
+          <h3>Wuzzuf Accounting / Finance Job Scraper</h3>
+          <p>Automated Chrome with Selenium, moved through Wuzzuf pages, and collected job_name, company, location, job_type, workplace and link_for_apply for Accounting / Finance jobs in Egypt.</p>
+          <div class="tags"><span>Python</span><span>Selenium</span><span>ChromeDriver</span></div>
+          <button class="btn primary" id="openCode">View full code ↗</button>
+        </div>
+        <div class="terminal">
+          <div class="term-bar"><i></i><i></i><i></i><span>wuzzuf_scraper.py</span></div>
+          <pre><code>driver.get(url)
+job_cards = driver.find_elements(...)
+for card in job_cards:
+    job_name.append(...)
+    company.append(...)
+    location.append(...)
+df = pd.DataFrame({...})</code></pre>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="card reveal"><div class="project-top"><span>02 · AI / INDUSTRIAL</span><span>3RD PLACE</span></div><h3>ReFab</h3><p>AI-driven industrial waste management platform for automated classification and redistribution between corporations and recycling enterprises.</p></article>
+        <article class="card reveal delay-1"><div class="project-top"><span>03 · IOT / ENERGY</span><span>4TH PLACE</span></div><h3>Smart Lab Controller</h3><p>Co-developed an automated IoT/software system designed to monitor and optimize energy usage in university academic labs.</p></article>
+      </div>
+    </section>
+
+    <section class="section tinted" id="journey">
+      <div class="heading reveal"><span>04</span><div><p class="eyebrow">JOURNEY</p><h2>Learning, building, competing.</h2></div></div>
+      <div class="timeline">
+        <article class="reveal"><span>2026 → PRESENT</span><div><h3>DEPI · IBM Machine Learning Track</h3><p>Model development, data processing, visualization and predictive analytics.</p></div></article>
+        <article class="reveal delay-1"><span>2026</span><div><h3>Wuzzuf Web Scraping</h3><p>Built an automated Selenium workflow to navigate job pages and collect structured data.</p></div></article>
+        <article class="reveal delay-2"><span>2025 → 2026</span><div><h3>University Projects & Competitions</h3><p>ReFab — 3rd place. Smart Lab Controller — 4th place.</p></div></article>
+        <article class="reveal"><span>2023 → 2025</span><div><h3>Technical Foundations</h3><p>Programming, digital literacy, AI exposure and computer science foundations.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="heading reveal"><span>05</span><div><p class="eyebrow">CONTACT</p><h2>Let's connect.</h2></div></div>
+      <div class="contact-grid">
+        <div class="reveal"><p class="lead">For opportunities, collaboration, project feedback, or a technical conversation, send a message.</p>
+          <div class="links"><a href="mailto:youssifessamzskimelgy@gmail.com"><span>Email</span><b>→</b></a><a href="https://github.com/youssefessamz" target="_blank" rel="noreferrer"><span>GitHub</span><b>→</b></a><a href="https://www.linkedin.com/in/youssef-essam-81a31537b/" target="_blank" rel="noreferrer"><span>LinkedIn</span><b>→</b></a></div>
+        </div>
+        <form class="form panel reveal delay-1" id="contactForm">
+          <label>Name<input name="name" required placeholder="Your name"></label>
+          <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
+          <label>Message<textarea name="message" rows="6" required placeholder="Tell me what you're working on..."></textarea></label>
+          <button class="btn primary" type="submit">Open email draft ↗</button>
+          <small>Your message is opened in your email app; this site does not store it.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Youssef Essam Zaki Melegy</span><a href="#home">Back to top ↑</a></footer>
+
+  <dialog id="codeDialog">
+    <div class="dialog-head"><div><p class="eyebrow">PROJECT SOURCE</p><h3>Wuzzuf scraper</h3></div><button id="closeCode" aria-label="Close">×</button></div>
+    <pre class="full-code"><code id="codeText"></code></pre>
+    <p class="muted dialog-note">This is the Selenium scraper you shared, shown as part of the portfolio project.</p>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
